@@ -1,41 +1,51 @@
-# Docs
+# CSI: Code Similarity Index
 
-This directory contains current, accepted documentation underpinning CSI.
-These documents cover all aspects of CSI ranging from the project down to
-detailed designs for specific feature implementations.
+<p align="center">
+  <a href="#why-csi">Why CSI?</a> |
+  <a href="#features">Features</a> |
+  <a href="#project-status">Project Status</a> |
+  <a href="#getting-started">Getting Started</a> |
+  <a href="#contributing">Contributing</a> |
+  <a href="#contact">Contact</a>
+</p>
 
-If you're trying to learn more about CSI, we recommend starting at
-[`/README.md`](/README.md).
+## Why CSI?
 
-## Design
+The Code Similarity Index (CSI) is designed to simplify the detection of code similarity across extensive codebases. CSI is tailored to address the challenges of plagiarism detection and code quality assessment by recognizing not only exact matches but also structural and logical similarities in code. Whether you're an educator, a software developer, or a company, CSI provides a comprehensive solution to manage and assess code integrity.
 
-CSI's design and rationale are documented in the
-[`design/` directory](design/README.md). This documentation is intended to
-support the following audiences:
+## Features
 
--   People who wish to determine whether CSI would be the right choice for a
-    project compared to other existing plagarism detection tools.
--   People working on the evolution of the CSI who wish to
-    understand the rationale and motivation for existing design decisions.
--   People working on a specification or implementation of CSI
-    who need a detailed understanding of the intended design.
+- **Advanced Code Matching**: CSI leverages abstract syntax trees (AST) and machine learning models to identify code similarity, even if the code has been obfuscated or refactored.
+- **Multi-Language Support**: Initially supporting Python and Java, with plans to extend compatibility to additional programming languages.
+- **Customizable Thresholds**: Adjust similarity detection settings to fine-tune between strict plagiarism detection and permissible code reuse.
+- **User-Friendly Interface**: An intuitive web interface for easy code uploads and detailed similarity reports.
 
-This is in contrast to [proposals](/proposals/README.md), which document the
-individual decisions that led to this design (along with other changes to the
-CSI project), including the rationale and alternatives considered.
+## Project Status
 
-## Project
+We're in the early stages of development, with a goal to establish core functionality within the next month. Stay tuned for updates as we make progress!
 
-The [`project/` directory](project/README.md) contains project-related
-documentation for CSI, including:
+## Getting Started
 
--   [goals](project/goals.md), and the
-    [principles](project/principles/README.md) and [roadmap](project/roadmap.md)
-    derived from those goals,
--   how the project works, and
--   how to contribute.
+To get started with CSI, clone the repository and follow the setup instructions provided in the README:
 
-## Guides
+```shell
+git clone https://github.com/yourusername/CSI.git
+cd CSI
+```
 
-The [`guides/` directory](guides/README.md) contains **to-be-written** end-user
-documentation for anyone trying to use CSI.
+For detailed setup and usage instructions, refer to the [README file](README.md).
+
+## Contributing
+
+CSI is an open, collaborative project, and contributions are highly encouraged. Whether you're interested in coding, providing feedback, or simply exploring, we welcome your involvement!
+
+- **Join the Discussion**: Participate in our [GitHub Discussions](https://github.com/ryoari/CSI/discussions).
+- **First-Time Contributors**: Check out issues labeled "good first issue" to get started.
+
+## Contact
+
+For questions, feedback, or collaboration inquiries, please reach out to us at [1syf04lap@mozmail.com](mailto:1syf04lap@mozmail.com).
+
+## License
+
+This project is licensed under the Apache License 2.0 License - see the [LICENSE](LICENSE) file for details.
