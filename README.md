@@ -1,19 +1,11 @@
-# Plagiarism Detection and Code Evaluation Tool
+Plagiarism Detection Tool
 
-This project is a simple plagiarism detection and code evaluation tool for programming assignments written in C/C++. The tool is designed to run on both Windows and Linux environments and uses Python for the backend with Flask as the web framework.
+This web-based plagiarism detection tool is designed to streamline the process of identifying code plagiarism in academic assignments. It integrates with Microsoft Teams for seamless assignment retrieval and offers direct file uploads. The tool processes code and runs advanced plagiarism checks, delivering real-time results and interactive reports.
 
-## Features
+Key Features:
+Seamless Integration: Connects directly with Microsoft Teams for automatic assignment retrieval and result uploads.
+Advanced Detection: Handles complex plagiarism cases, including cross-language code comparisons.
+Real-Time Feedback: Provides immediate plagiarism results during the submission process.
+Interactive Reports: Generates detailed reports with visual comparisons and similarity heatmaps.
 
-- **Plagiarism Detection**: Detects exact code copying and structural similarities.
-- **Code Evaluation**: Compiles and runs submitted code against predefined test cases.
-- **Simple User Interfaces**: Submission form for students and report view for instructors.
-- **Cross-Platform Compatibility**: Runs on both Windows and Linux.
-
-## Requirements
-
-- Python 3.x
-- Flask
-- SQLite3 (comes with Python)
-- C++ Compiler (GCC for Linux, MinGW for Windows)
-
-
+This tool is built for efficiency and accuracy, offering a user-friendly interface with powerful features to enhance academic integrity.
