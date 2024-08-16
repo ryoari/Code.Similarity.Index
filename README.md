@@ -29,7 +29,7 @@ We're in the early stages of development, with a goal to establish core function
 To get started with CSI, clone the repository and follow the setup instructions provided in the README:
 
 ```shell
-git clone https://github.com/yourusername/CSI.git
+git clone https://github.com/ryoari/CSI.git
 cd CSI
 ```
 
