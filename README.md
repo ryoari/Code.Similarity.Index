@@ -1,5 +1,5 @@
-this was my 2024 project and it is very minimalistic as I overestimated my coding skills,
-as of 2025 I intend to work on other things hence archived.
+this was my 2024 project and it is very minimalistic as I overestimated my coding skills, as of 2025 I intend to work on other things hence archived.
+
 NOTE TO SELF: Get your basics right 🤦‍♂️
 
 # CSI: Code Similarity Index
