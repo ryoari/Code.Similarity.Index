@@ -1,4 +1,6 @@
-this was my 2024 project, as of 2025 I intend to work on other things hence archived
+this was my 2024 project and it is very minimalistic as I overestimated my coding skills,
+as of 2025 I intend to work on other things hence archived.
+NOTE TO SELF: Get your basics right 🤦‍♂️
 
 # CSI: Code Similarity Index
 
@@ -31,8 +33,8 @@ We're in the early stages of development, with a goal to establish core function
 To get started with CSI, clone the repository and follow the setup instructions provided in the README:
 
 ```shell
-git clone https://github.com/ryoari/CSI.git
-cd CSI
+git clone https://github.com/ryoari/Code.Similarity.Index.git
+cd Code.Similarity.Index
 ```
 
 For detailed setup and usage instructions, refer to the [README file](README.md).
@@ -41,7 +43,7 @@ For detailed setup and usage instructions, refer to the [README file](README.md)
 
 CSI is an open, collaborative project, and contributions are highly encouraged. Whether you're interested in coding, providing feedback, or simply exploring, we welcome your involvement!
 
-- **Join the Discussion**: Participate in our [GitHub Discussions](https://github.com/ryoari/CSI/discussions).
+- **Join the Discussion**: Participate in our [GitHub Discussions](https://github.com/ryoari/Code.Similarity.Index/discussions).
 - **First-Time Contributors**: Check out issues labeled "good first issue" to get started.
 
 ## Contact
