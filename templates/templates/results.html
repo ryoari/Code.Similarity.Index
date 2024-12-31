@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similarity Results</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .highlight-level0 { background-color: #ffcccb; }
+        .highlight-level1 { background-color: #90ee90; }
+        .code-comparison {
+            display: flex;
+            justify-content: space-between;
+        }
+        .code-block {
+            width: 48%;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-family: monospace;
+        }
+        .similarity-high { color: #28a745; }
+        .similarity-medium { color: #ffc107; }
+        .similarity-low { color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Similarity Results</h1>
+        {% for result in results %}
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2>Comparison: {{ result.file1 }} vs {{ result.file2 }}</h2>
+                </div>
+                <div class="card-body">
+                    <p>Level 0 Similarity: 
+                        <span class="
+                            {% if result.level0_similarity > 80 %}similarity-high
+                            {% elif result.level0_similarity > 50 %}similarity-medium
+                            {% else %}similarity-low
+                            {% endif %}
+                        ">
+                            {{ result.level0_similarity | round(2) }}%
+                        </span>
+                    </p>
+                    {% if result.level1_similarity > 0 %}
+                        <p>Level 1 Similarity: 
+                            <span class="
+                                {% if result.level1_similarity > 80 %}similarity-high
+                                {% elif result.level1_similarity > 50 %}similarity-medium
+                                {% else %}similarity-low
+                                {% endif %}
+                            ">
+                                {{ result.level1_similarity | round(2) }}%
+                            </span>
+                        </p>
+
+                        <h3>Detailed Similarity Analysis:</h3>
+                        {% for _, similarity, snippet1, snippet2 in result.detailed_similarity %}
+                            <div class="similarity-snippet mb-4">
+                                <h4>Similarity: {{ similarity * 100 | round(2) }}%</h4>
+                                <div class="code-comparison">
+                                    <div class="code-block">
+                                        <pre><code>{{ snippet1 | e }}</code></pre>
+                                    </div>
+                                    <div class="code-block">
+                                        <pre><code>{{ snippet2 | e }}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <p>Level 1 analysis not performed due to low Level 0 similarity.</p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Back to Upload</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
